@@ -23,6 +23,9 @@ bandit = {extras = ["toml"], version = "^1.7.4"}
 [tool.poetry.scripts]
 poetry = "runner:run"
 
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+
 [tool.mypy]
 python_version = "3.10"
 strict = true
