@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "fastapi-app-template"
+name = "app"
 version = "0.1.0"
 description = "Base template for creating a FastAPI application"
 authors = ["druizz90 <32929872+druizz90@users.noreply.github.com>"]
@@ -19,6 +19,9 @@ httpx = "^0.23.0"
 pytest-asyncio = "^0.18.3"
 asgi-lifespan = "^1.0.1"
 bandit = {extras = ["toml"], version = "^1.7.4"}
+
+[tool.poetry.scripts]
+poetry = "runner:run"
 
 [tool.mypy]
 python_version = "3.10"
