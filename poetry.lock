@@ -135,6 +135,9 @@ category = "dev"
 optional = false
 python-versions = ">=3.7"
 
+[package.dependencies]
+tomli = {version = "*", optional = true, markers = "python_full_version <= \"3.11.0a6\" and extra == \"toml\""}
+
 [package.extras]
 toml = ["tomli"]
 
@@ -590,7 +593,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "de8d777a5fca49e8983df5246ead53bdd019c44431f27c1d0fe22d9410fc325a"
+content-hash = "1d645ea696090d0f3a37d14c823b7bd19b8db76dc1ea380d2ac4f934e7505475"
 
 [metadata.files]
 anyio = [

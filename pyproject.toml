@@ -13,7 +13,7 @@ uvicorn = {extras = ["standard"], version = "^0.17.6"}
 pytest = "^7.1.2"
 mypy = "^0.960"
 flake8 = "^4.0.1"
-coverage = "^6.4.1"
+coverage = {extras = ["toml"], version = "^6.4.1"}
 black = "^22.3.0"
 httpx = "^0.23.0"
 pytest-asyncio = "^0.18.3"
@@ -25,6 +25,9 @@ poetry = "runner:run"
 
 [tool.pytest.ini_options]
 asyncio_mode = "strict"
+
+[tool.coverage.run]
+source = ["app"]
 
 [tool.mypy]
 python_version = "3.10"
