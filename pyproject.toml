@@ -19,6 +19,7 @@ httpx = "^0.23.0"
 pytest-asyncio = "^0.18.3"
 asgi-lifespan = "^1.0.1"
 bandit = {extras = ["toml"], version = "^1.7.4"}
+isort = "^5.10.1"
 
 [tool.poetry.scripts]
 poetry = "runner:run"
